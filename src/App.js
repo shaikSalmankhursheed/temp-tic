@@ -8,9 +8,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-// import LongText from "./components/LongText";
-
-const LongText = lazy(() => import("./components/LongText"));
 
 const itemArray = new Array(9).fill("empty");
 
@@ -128,17 +125,7 @@ const App = () => {
           ))}
         </div>
       </Row>
-      <h1>
-        <Suspense
-          fallback={
-            <h1>
-              Loading............................................................
-            </h1>
-          }
-        >
-          <LongText />
-        </Suspense>
-      </h1>
+      <h1></h1>
     </Container>
   );
 };
